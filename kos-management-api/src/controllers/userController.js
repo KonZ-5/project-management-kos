@@ -41,7 +41,7 @@ exports.getUserById = async (req, res) => {
     if (rows.length === 0) {
       return errorResponse(res, 404, 'User tidak ditemukan');
     }
-    successResponse(res, 200, 'Data user berhasil diambil', rows[0]);
+    successResponse(res, 200, 'Data user berhasil  diambil', rows[0]);
   } catch (error) {
     console.error(error);
     errorResponse(res, 500, 'Terjadi kesalahan server');
